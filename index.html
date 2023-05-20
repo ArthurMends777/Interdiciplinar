@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raposa Dourada Bicuit</title>
+    <link rel="shortcut icon" href="src/img/logo_raposa.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Raposa Dourada</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="src/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="slideshow-container">
+            <img class="bg active" src="src/img/tubetes_herois.jpeg" alt="background">
+            <img class="bg" src="src/img/home.jpeg" alt="background">
+            <img class="bg" src="src/img/tubetes_herois.jpeg" alt="background">
+        </div>
+
+        <div class="banner active">
+            <span>
+                Transforme sua criatividade em arte com biscuit.
+            </span>
+          </div>
+          <div class="banner">
+            <span>
+                Transforme sua criatividade em arte com nossos materiais de biscuit e faça suas ideias ganharem vida!
+            </span>
+          </div>
+          <div class="banner">
+            <span>
+                Artesanato é amor em cada detalhe, e nós temos os materiais perfeitos para você criar peças únicas e encantadoras!
+            </span>
+          </div>
+          <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+    </section>
+
+    <section class="products" id="products">
+        
+        <h2> Nossos produtos: </h2>
+        <div class="items">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="src/img/presepio2.jpeg" alt="">
+                </div>
+                <div class="contentBox">
+                    <h3>Presépio</h3>
+                    <span class="preco"> R$170.<small>00</small></span>
+                    <a href="#" class="buy">Compre Agora</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBox">
+                    <img src="src/img/snape.jpeg" alt="">
+                </div>
+                <div class="contentBox">
+                    <h3>SNAPE EM BISCUIT</h3>
+                    <span class="preco"> R$170.<small>00</small></span>
+                    <a href="#" class="buy">Compre Agora</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBox">
+                    <img src="src/img/Topo de bolo_herois.JPG" alt="">
+                </div>
+                <div class="contentBox">
+                    <h3>Topo de bolo</h3>
+                    <span class="preco"> R$170.<small>00</small></span>
+                    <a href="#" class="buy">Compre Agora</a>
+                </div>
+            </div>
+        </div>
+            
+        
+    </section>
+
+    <section class="about" id="about">
+        <h2>Sobre a Raposa Dourada</h2>
+        <div>
+            <div class="left">
+                <h3>Nossa História</h3>
+                    <p>
+                        A loja Raposa Dourada Biscuit nasceu da minha paixão pela arte, principalmente pela<br>
+                        modelagem, já passei por diversos tipos de artesanato, entre eles o papel machê, decoupage,
+                        chinelos decorados e a fabricação de sabonetes artesanais mas me descobri na modelagem em
+                        biscuit.
+                    </p>
+                    <p> 
+                        Em 2019, comecei a me dedicar na área com o intuito de fazer a minha loja. Em 2020,<br>
+                        usando o trabalho artesanal como terapia durante o período de pandemia, consegui abrir a minha
+                        loja.
+                    </p>
+                    <p>
+                        Onde estou até hoje feliz, cada vez mais focada em levar alegria em momentos especiais para as
+                        pessoas com a minha arte.
+                    </p>
+            </div>
+
+            <div class="right">
+                <h3> MIssão </h3>
+                <ul class="list">
+                    <li>Com o meu trabalho, levar alegria e marcar momentos especiais com a minha arte.
+                    </li>
+                </ul>
+                <h3> Visão </h3>
+                    <ul>
+                        <li>Expandir a rede de clientes, nacional e internacionalmente levando minha arte
+                            para o maior número de pessoas
+                        </li>
+                    </ul>
+                <h3> Valores </h3>
+                <ul class="list">
+                    <li>Criatividade</li>
+                    <li>O cliente no controle</li>
+                    <li>Ética</li>
+                    <li>Agilidade no atendimento</li>
+                    <li>Qualidade no trabalho</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_logo">
+                <img src="src/img/logo_raposa.png" alt="">
+            </div>
+            <div class="footer-list">
+                <h3>Nossas lojas</h3>
+                <div>
+                    <a href="#" class="footer-link">
+                        <img src="src/img/elo7.png" alt="elo7">
+                    </a>
+        
+                    <a href="#" class="footer-link">
+                        <img src="src/img/shoppe.png" alt="">
+                    </a>
+                </div>        
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 todos direitos reservados
+        </div>
+    </footer>
+
+    <script src="src/script/script.js"></script>
+</body>
+</html>

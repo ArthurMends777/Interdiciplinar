@@ -68,6 +68,10 @@ footer {
     #footer_content {
         gap: 2rem;
     }
+    #footer_logo{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 542px) {

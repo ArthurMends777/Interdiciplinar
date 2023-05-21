@@ -39,7 +39,7 @@
     height: 100%;
     background: #FF8C00;
     transform: skewY(345deg);
-    transition: 0.5s;
+    transition: 0.4s all ease-in-out;
 }
 
 .card:hover::before{

@@ -1,6 +1,7 @@
 /*********
     HOME
 **********/
+
 .home{
     width: 100%;
     height: 100vh;
@@ -12,15 +13,16 @@
 
 .home span{
     color: white;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 .slideshow-container {
     position: relative;
     width: 100%;
     height: 100vh;
+    filter: brightness(.5);
     overflow: hidden;
 }
   
@@ -43,7 +45,7 @@
 }
 
 .banner {
-    max-width: 50%;
+    max-width: 90%;
     padding: 4rem;
     opacity: 0;
     position: absolute;
@@ -62,6 +64,7 @@
     width: 20px;
     height: 20px;
     background-color: black;
+    cursor: pointer;
 }
 
 .dot.active {
@@ -70,7 +73,13 @@
 
 @media screen and (max-width: 700px) {
     .banner {
-        max-width: 90%;
+        max-width: 100%;
+    }
+    .slideshow-container{
+        height: 50%;
+    }
+    .bg{
+        transform: scale(1.4);
     }
 }
 

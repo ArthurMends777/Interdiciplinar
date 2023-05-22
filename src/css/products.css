@@ -2,35 +2,86 @@
     Products
 **************/
 
+#title-products{
+    text-align: center;
+    color: #333333;
+    margin: 4rem 1em 1em 1em;
+}
+
 .products{
-    width: 100%;
-    padding: 5rem;
+    width: 63em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    margin: 0 auto;
+    transition: all 1s ease-in-out;
 }
 
-.products  h2{
-    margin-bottom: 2rem;
+.products::-webkit-scrollbar {
+    display: none;
 }
 
-.products .items{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+/* .products .items{
+    overflow-x: auto;
+} */
+
+.products .items-gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    gap: 1.5em;
 }
 
-.products  .items .card{
+.products .card{
     position: relative;
     width: 320px;
     height: 340px;
     background-color:#333;
     border-radius: 20px;
+    flex-shrink: 0;
+    opacity: 1;
     overflow: hidden;
-    margin: 10px;
+    margin: 10px 0 10px 0;
+    transition: all 600ms ease-in-out;
+}
+
+#buttons-carosuel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+    padding: 2em;
+}
+
+#buttons-carosuel button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 1em;
+    width: 4em;
+    height: 3.5em;
+    outline: none;
+    border: 2px solid #333333;
+    color: #333333;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+#buttons-carosuel button:hover{
+    border-color: #FF8C00;
+    color:#FF8C00;
+    background-color: #b1b1b10e;
 }
 
 /* CARD */
+
 .card::before{
     content: '';
     position: absolute;
@@ -117,18 +168,21 @@
     transition: 0.5s;
 }
 .card:hover .contentBox .buy{
-    top: 0px;
+    top: 0;
     opacity: 1;
 }
 
 @media screen and (max-width: 1090px) {
-    .products .items{
+    .products .items-gallery{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 735px) {
-    .products .items{
+    .products{
+        width: 20em;
+    }
+    .products .items-gallery{
         grid-template-columns: repeat(1, 1fr);
     }
 }
